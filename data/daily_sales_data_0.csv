@@ -1,4 +1,4 @@
-product,price,quantity,date,region
+product,price,quantity,date,Replace
 pink morsel,$3.00,546,2018-02-06,north
 pink morsel,$3.00,549,2018-02-06,south
 pink morsel,$3.00,577,2018-02-06,east
