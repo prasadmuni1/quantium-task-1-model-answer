@@ -50,7 +50,7 @@ header = html.H1(
 Region_picker = dcc.RadioItems(
     ["north", "east", "south", "west", "all"],
     "north",
-    id="Region_picker",
+    id="region_picker",
     inline=True
 )
 Region_picker_wrapper = html.Div(
@@ -63,10 +63,10 @@ Region_picker_wrapper = html.Div(
 )
 
 
-# define the region picker callback
+# define the Region picker callback
 @dash_app.callback(
     Output(visualization, "figure"),
-    Input(Region_picker, "value")
+    Input("region_picker", "value")
 )
 def update_graph(Region):
     # filter the dataset
